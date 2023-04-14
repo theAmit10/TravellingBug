@@ -37,6 +37,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 
+    // dynamic sizes
     implementation 'com.intuit.ssp:ssp-android:1.0.5'
     implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    // for country Code
+    implementation 'com.github.jitenderdev:countryutility:v1.1'
 }

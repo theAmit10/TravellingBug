@@ -4,6 +4,190 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
     tools:context=".AuthScreen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/intro_four" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Welcome to Travelling Bug"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="enter your phone number to continue"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:id="@+id/ll_mobileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/countryCodeTv"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="@dimen/_2sdp"-->
+            <!--            android:backgroundTint="@drawable/auth_btn_white_bg"-->
+            <!--            android:text="+91"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:padding="@dimen/_10sdp"-->
+            <!--            android:textColor="@color/colorDarkGray"-->
+            <!--            android:textSize="@dimen/_11sdp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auth_btn_white_bg"
+                android:padding="@dimen/_10sdp"
+                android:text="+91"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/et_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:background="@drawable/auth_btn_white_bg"
+                android:hint="Enter your number"
+
+                android:inputType="phone|textNoSuggestions"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHint="@color/colorGray"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/colorLightGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:backgroundTint="@color/colorLightGray"
+                android:padding="@dimen/_10sdp"
+                android:text="OR CONTINUE WITH"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <View
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/colorLightGray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sign_in_button_google"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/auth_btn_white_bg"
+                android:drawableLeft="@drawable/icon_google"
+                android:elevation="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:paddingStart="10dp"
+                android:text="Google"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <Button
+                android:id="@+id/sign_in_button_facebook"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/auth_btn_blue_bg"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:elevation="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:paddingStart="10dp"
+                android:text="Facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/auth_btn_green_bg"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_100sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         app:layout_constraintBottom_toTopOf="@+id/my_tablayout"
         app:layout_constraintEnd_toEndOf="parent"
