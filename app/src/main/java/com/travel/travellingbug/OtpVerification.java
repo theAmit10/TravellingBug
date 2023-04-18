@@ -130,58 +130,64 @@ public class OtpVerification extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!inputOption1.getText().toString().trim().isEmpty() &&  !inputOption2.getText().toString().trim().isEmpty() && !inputOption3.getText().toString().trim().isEmpty() && !inputOption4.getText().toString().trim().isEmpty() && !inputOption5.getText().toString().trim().isEmpty() && !inputOption6.getText().toString().trim().isEmpty() ){
 
-                    String enterCodeOtp = inputOption1.getText().toString().trim() +
-                            inputOption2.getText().toString().trim() +
-                            inputOption3.getText().toString().trim() +
-                            inputOption4.getText().toString().trim() +
-                            inputOption5.getText().toString().trim() +
-                            inputOption6.getText().toString().trim() ;
+                Intent intent = new Intent(OtpVerification.this, LanguageSelctorActivity.class);
+                startActivity(intent);
 
-//                    if(getOtpBacked!=null){
-//                        progressBar.setVisibility(View.VISIBLE);
-//                        verifyButtonClick.setVisibility(View.INVISIBLE);
+//                if(!inputOption1.getText().toString().trim().isEmpty() &&  !inputOption2.getText().toString().trim().isEmpty() && !inputOption3.getText().toString().trim().isEmpty() && !inputOption4.getText().toString().trim().isEmpty() && !inputOption5.getText().toString().trim().isEmpty() && !inputOption6.getText().toString().trim().isEmpty() ){
 //
-//                        PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(
-//                                getOtpBacked, enterCodeOtp
-//                        );
+//                    String enterCodeOtp = inputOption1.getText().toString().trim() +
+//                            inputOption2.getText().toString().trim() +
+//                            inputOption3.getText().toString().trim() +
+//                            inputOption4.getText().toString().trim() +
+//                            inputOption5.getText().toString().trim() +
+//                            inputOption6.getText().toString().trim() ;
 //
-//                        FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential)
-//                                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-//                                    @Override
-//                                    public void onComplete(@NonNull Task<AuthResult> task) {
 //
-//                                        progressBar.setVisibility(View.GONE);
-//                                        verifyButtonClick.setVisibility(View.VISIBLE);
 //
-//                                        if(task.isSuccessful()){
-////                                            getIntent().getStringExtra("mobile");
+////                    if(getOtpBacked!=null){
+////                        progressBar.setVisibility(View.VISIBLE);
+////                        verifyButtonClick.setVisibility(View.INVISIBLE);
+////
+////                        PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(
+////                                getOtpBacked, enterCodeOtp
+////                        );
+////
+////                        FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential)
+////                                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+////                                    @Override
+////                                    public void onComplete(@NonNull Task<AuthResult> task) {
+////
+////                                        progressBar.setVisibility(View.GONE);
+////                                        verifyButtonClick.setVisibility(View.VISIBLE);
+////
+////                                        if(task.isSuccessful()){
+//////                                            getIntent().getStringExtra("mobile");
+////
+////                                            database.getReference().child("Users")
+////                                                    .child(FirebaseAuth.getInstance().getUid())
+////                                                    .setValue(getIntent().getStringExtra("mobile"));
+////
+////                                            String id = task.getResult().getUser().getUid();
+////
+////                                            Intent intent = new Intent(VerifyOtpScreen.this, MandirDummyActivity.class);
+////                                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+////                                            startActivity(intent);
+////                                        }else{
+////                                            Toast.makeText(VerifyOtpScreen.this, "Enter Correct OTP ", Toast.LENGTH_SHORT).show();
+////                                        }
+////
+////                                    }
+////                                });
+////
+////                    }else {
+////                        Toast.makeText(VerifyOtpScreen.this, "Please Check Your Internet Connection ", Toast.LENGTH_SHORT).show();
+////                    }
 //
-//                                            database.getReference().child("Users")
-//                                                    .child(FirebaseAuth.getInstance().getUid())
-//                                                    .setValue(getIntent().getStringExtra("mobile"));
-//
-//                                            String id = task.getResult().getUser().getUid();
-//
-//                                            Intent intent = new Intent(VerifyOtpScreen.this, MandirDummyActivity.class);
-//                                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                                            startActivity(intent);
-//                                        }else{
-//                                            Toast.makeText(VerifyOtpScreen.this, "Enter Correct OTP ", Toast.LENGTH_SHORT).show();
-//                                        }
-//
-//                                    }
-//                                });
-//
-//                    }else {
-//                        Toast.makeText(VerifyOtpScreen.this, "Please Check Your Internet Connection ", Toast.LENGTH_SHORT).show();
-//                    }
-
-//                    Toast.makeText(VerifyOtpScreen.this, "otp verified", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(OtpVerification.this, "please enter all number", Toast.LENGTH_SHORT).show();
-                }
+////                    Toast.makeText(VerifyOtpScreen.this, "otp verified", Toast.LENGTH_SHORT).show();
+//                }else{
+//                    Toast.makeText(OtpVerification.this, "please enter all number", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }

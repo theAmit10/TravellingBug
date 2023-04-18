@@ -55,7 +55,7 @@ public class LanguageSelectorAdapter extends  RecyclerView.Adapter<LanguageSelec
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            radioButton = itemView.findViewById(R.id.radioButton);
+//            radioButton = itemView.findViewById(R.id.radioButton);
 
 
         }
