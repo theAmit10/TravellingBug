@@ -8,13 +8,16 @@
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/drawable/auth_btn_blue_bg.xml" value="0.2325" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/drawable/auth_btn_green_bg.xml" value="0.2325" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/drawable/auth_btn_white_bg.xml" value="0.2325" />
+        <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/drawable/ic_arrow_back.xml" value="0.2325" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/drawable/ic_facebook.xml" value="0.2325" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/drawable/icon_google.xml" value="0.2325" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/activity_auth_screen.xml" value="0.264" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/activity_intro_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/activity_language_selctor.xml" value="0.264" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/activity_otp_verification.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/design_intro_view_pager.xml" value="0.4" />
+        <entry key="..\:/Users/Demon/AndroidStudioProjects/TravellingBug/app/src/main/res/layout/design_language.xml" value="0.2" />
       </map>
     </option>
   </component>

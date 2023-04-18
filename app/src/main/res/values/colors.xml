@@ -14,4 +14,6 @@
     <color name="colorDarkGray">#646464</color>
     <color name="colorGray_light">#CDCDCD</color>
     <color name="colorGreyLight">#4DCCCCCC</color>
+    <color name="vividCerise">#da1d81</color>
+    <color name="smokyBlack">#100c08</color>
 </resources>
