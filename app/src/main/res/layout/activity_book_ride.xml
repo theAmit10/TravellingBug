@@ -60,7 +60,7 @@
                 android:id="@+id/view2"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_4sdp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/auth_btn_green_bg"
                 app:layout_constraintBottom_toBottomOf="@+id/view"
                 app:layout_constraintEnd_toEndOf="@+id/view"
