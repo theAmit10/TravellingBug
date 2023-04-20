@@ -14,6 +14,54 @@
         android:theme="@style/Theme.TravellingBug"
         tools:targetApi="31">
         <activity
+            android:name=".DriverProfileActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleDetailsMenufactureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleDetailsColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleDetailsTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleDetailsModelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleDetailsBrandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehicleDetailsLicensePlateNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TravelPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyIdMainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".VerifyIdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChangeAddressAdtivityTwo"
             android:exported="false" />
         <activity

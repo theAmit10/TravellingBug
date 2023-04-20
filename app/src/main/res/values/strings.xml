@@ -2,4 +2,5 @@
     <string name="app_name">TravellingBug</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_and_condition">The information colledted below by travelling bug us necessary to verify your identity. You can learn more about your rights and how we handle your personal data in our  <font color='#01C6DB'>Privacy Policy.</font></string>
 </resources>

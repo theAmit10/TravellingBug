@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ChangeAddressAdtivityTwo">
+    tools:context=".VehicleDetailsBrandActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_10sdp"
         android:background="@color/green"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -21,7 +21,7 @@
             android:layout_height="@dimen/_40sdp"
             android:layout_weight="0"
             android:padding="@dimen/_5sdp"
-            app:srcCompat="@drawable/ic_wrong" />
+            app:srcCompat="@drawable/ic_arrow_back" />
 
     </LinearLayout>
 
@@ -30,13 +30,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/_10sdp"
-        android:text="What's your Address ? "
+        android:text="What's your vehicle's \nbrand ? "
         android:textColor="@color/black"
         android:textSize="@dimen/_18sdp"
         android:textStyle="bold" />
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fullAdressInput"
+        android:id="@+id/vehicleBrandInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,21 +49,32 @@
         android:paddingTop="5dp"
         android:paddingEnd="15dp"
         android:paddingBottom="5dp"
->
+        >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/fullAdressETL"
+            android:id="@+id/vehicleBrandETL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:drawableLeft="@drawable/ic_search"
-            android:hint="Full Address"
+            android:hint="Enter Vehicle Brand"
             android:drawablePadding="@dimen/_10sdp"
             android:paddingBottom="5dp"
             tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vehicleBrandRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/design_vehicle_brand" />
+
+    </RelativeLayout>
 
 
 
